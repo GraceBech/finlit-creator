@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "FinLit Creator",
+    "slug": "finlit-creator",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1B5E20"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.finlit.creator",
+      "infoPlist": {
+        "NSCalendarsUsageDescription": "FinLit Creator uses your calendar to schedule content and sync deadlines.",
+        "NSRemindersUsageDescription": "FinLit Creator creates reminders for your scheduled content."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1B5E20"
+      },
+      "package": "com.finlit.creator",
+      "permissions": ["READ_CALENDAR", "WRITE_CALENDAR"]
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "baseUrl": "/finlit-creator"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-calendar"
+    ],
+    "scheme": "finlit-creator",
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    }
+  }
+}
